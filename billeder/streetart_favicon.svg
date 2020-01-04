@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="260" viewBox="0 0 260 260">
+  <defs>
+    <clipPath id="clip-streetart_icon">
+      <rect width="260" height="260"/>
+    </clipPath>
+  </defs>
+  <g id="streetart_icon" clip-path="url(#clip-streetart_icon)">
+    <rect width="260" height="260" fill="#fff"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="14" height="52" transform="translate(86 200)" fill="#00b7a4"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="11" height="24" transform="translate(106 213)" fill="#00b7a4"/>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="7" cy="6.5" rx="7" ry="6.5" transform="translate(86 245)" fill="#00b7a4"/>
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="5.5" cy="6.5" rx="5.5" ry="6.5" transform="translate(106 231)" fill="#00b7a4"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="10" cy="10" r="10" transform="translate(30 200)" fill="#00b7a4"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="4.5" cy="4" rx="4.5" ry="4" transform="translate(57 222)" fill="#00b7a4"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="8" cy="8" r="8" transform="translate(236 147)" fill="#00b7a4"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(35 34)" fill="#00b7a4" stroke="#00b7a4" stroke-width="1">
+      <ellipse cx="95" cy="96" rx="95" ry="96" stroke="none"/>
+      <ellipse cx="95" cy="96" rx="94.5" ry="95.5" fill="none"/>
+    </g>
+    <path id="Path_4" data-name="Path 4" d="M88.333,118.587H183.65V69.32L143.793,94.674H88.333Z" transform="translate(0 0.18)" fill="#e5e1e1"/>
+    <path id="Path_5" data-name="Path 5" d="M183.65,118.66H88.333V69.32l39.857,25.392h55.46Z" transform="translate(271.984 236.98) rotate(-180)" fill="#bfbfbf"/>
+    <path id="Path_6" data-name="Path 6" d="M88.333,94.329l-11.662,10v25.916l11.662,11.408Z" transform="translate(0 0.571)" fill="#e94545"/>
+    <path id="Path_7" data-name="Path 7" d="M100,142.229v47.486h16.086l8.671-8.571V142.229Z" fill="#160c0c"/>
+    <path id="Path_8" data-name="Path 8" d="M112.379,142.229v47.3h3.807l8.486-8.486V142.229Z" fill="#353030"/>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="23" cy="21" rx="23" ry="21" transform="translate(47 39)" fill="#00b7a4"/>
+    <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="23" cy="21" rx="23" ry="21" transform="translate(137 190)" fill="#00b7a4"/>
+    <ellipse id="Ellipse_9" data-name="Ellipse 9" cx="25" cy="24.5" rx="25" ry="24.5" transform="translate(167 173)" fill="#00b7a4"/>
+    <ellipse id="Ellipse_10" data-name="Ellipse 10" cx="18" cy="16.5" rx="18" ry="16.5" transform="translate(37 65)" fill="#00b7a4"/>
+  </g>
+</svg>
