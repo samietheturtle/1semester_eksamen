@@ -3,13 +3,17 @@ body {
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 img {
     width: 100%;
 }
 
-
+.headlines {
+    display: flex;
+    align-content: center;
+}
 
 h1 {
     font-family: 'von_bond_regularregular';
@@ -17,7 +21,7 @@ h1 {
     letter-spacing: 0.3rem;
     color: #707070;
     margin-top: 5px;
-
+    margin-bottom: 7px;
     text-transform: uppercase;
     text-align: center;
 
@@ -35,8 +39,22 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: 'von_bond_regularregular';
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+
+
+}
+
 .h1_underline {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
     width: 80%;
     height: 2px;
     background-color: rgb(226, 226, 226);
@@ -47,6 +65,11 @@ a {
     color: #707070;
 }
 
+
+
+/******FONTE*******/
+
+
 @font-face {
     font-family: 'von_bond_regularregular';
     src: url('vonbond-regular-webfont.woff2') format('woff2'),
@@ -56,6 +79,24 @@ a {
 
 }
 
+@font-face {
+    font-family: 'fragment_coreroman';
+    src: url('fragmentcore-webfont.woff2') format('woff2'),
+        url('fragmentcore-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'white_angelicaregular';
+    src: url('whiteangelica-webfont.woff2') format('woff2'),
+        url('whiteangelica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*****NAVIGATIONS BAR OG BURGER MENU******/
 
@@ -71,8 +112,12 @@ nav {
 
 .logo {
     color: rgb(226, 226, 226);
-    letter-spacing: 5px;
+    font-family: 'white_angelicaregular';
 
+}
+
+.logo a {
+    color: rgb(226, 226, 226);
 }
 
 .nav_links {
@@ -91,7 +136,12 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: lighter;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
 
+.nav_links a:hover {
+    font-weight: bold;
 }
 
 .burger {
@@ -139,82 +189,168 @@ nav {
 /****** PORTFOLIO *****/
 
 
-/*
-.portfolio {
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-
-}
-*/
-
 .category {
     width: 250px;
     height: 250px;
-    padding-bottom: 60px;
+    padding-bottom: 25px;
     transition: all .3s ease-in-out;
 }
 
 
 
-.category_txt {
+.category_btn {
+
     text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
+    text-decoration: none;
+    display: inline-block;
     text-align: center;
-    position: relative;
-    width: 85%;
+    font-size: 1.5rem;
+    padding: 8px 50px;
+    margin: 4px 2px;
     box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     transition: all .3s ease-in-out;
-}
 
-
-.category_txt:hover {
-    /*    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);*/
-    transform: scale(1.2);
-}
-
-.category:hover {
-    transform: scale(1.2);
 }
 
 .lined_thin {
     border: solid 2px #41403E;
 }
 
+.category:hover {
+    transform: scale(1.2);
+}
 
-
-
-/**************WEB********************/
-
-
-/*
-.web_con {
-    display: flex;
+.button {
+    padding: 8px 25px;
+    text-align: center;
     text-decoration: none;
-    justify-content: space-between;
-    margin-left: 55px;
-    margin-right: 20px;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
-*/
+.button1 {
+    color: white;
+    border: 2px solid white;
+}
 
 
-.laptop_icon {
-    width: 50px;
-    height: 50px;
-    left: 50%;
+
+
+/**************About page********************/
+
+
+.icon {
+    display: block;
+    width: 3.5%;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+
+
+.overlay {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 50px;
+    padding-right: 40px;
+
+    margin-bottom: 30px;
+
+}
+
+.media {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.layer {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 90%;
+    background: #FFF;
+    color: #151E3F;
+    transition: all 0.9s ease;
 
 
 }
 
 
-/*********** ROW & COLUMN ****************/
+.layer p {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+}
+
+.media:hover .layer {
+    opacity: 0.8;
+    width: 90%;
+    transition: all 0.5s ease;
+
+}
+
+.media:hover .layer p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+}
+
+
+
+/*********** PAGES SETUP ****************/
+
+.page_wrapper_green {
+    padding-left: 70px;
+    padding-right: 80px;
+    margin-bottom: 50px;
+    background-color: #C7D3D3;
+}
+
+.page_wrapper_orange {
+    padding-left: 70px;
+    padding-right: 80px;
+    margin-bottom: 50px;
+    background-color: #E59B7F;
+}
+
 
 .page_wrapper {
-    margin-left: 125px;
-    margin-right: 125px;
+    padding-left: 50px;
+    padding-right: 40px;
+    margin-bottom: 50px;
+
 }
 
 
@@ -223,6 +359,14 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row_icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 .column {
@@ -230,22 +374,54 @@ nav {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-
+    margin: 0 auto;
 }
 
 .column_txt {
     height: 100%;
-    padding-right: 50px;
+    color: white;
+    margin-top: 30px;
+    padding: 10px 50px 50px 50px;
+    line-height: 1.6;
+    border-radius: 5px;
+
 }
 
 .column_pic {
+    width: 100%;
+    padding: 20px;
+}
+
+.column_video {
+    width: 100%;
+    padding-top: 40px;
+    margin: 10px;
+}
+
+
+.about_column_pic {
+    width: 100%;
+}
+
+
+.about_column_txt {
     height: 100%;
+    background-color: white;
 
-
+    padding: 10px 50px 0px 50px;
+    line-height: 1.6;
+    border-radius: 5px;
 }
 
 /**************RESPONSIVE*****************/
-
+@media (max-width: 600px) {
+    .wrapper {
+        display: block;
+        margin: 0px 45px;
+        10px 45px;
+        pointer-events: none;
+    }
+}
 
 @media screen and (max-width:768px) {
     body {
@@ -270,7 +446,10 @@ nav {
     }
 
     .h1_underline {
-        display: inline-block;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 25px;
         width: 80%;
         height: 2px;
         background-color: rgb(226, 226, 226);
@@ -318,35 +497,62 @@ nav {
     }
 
     .category_txt:hover {
-        /*    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);*/
-        transform: none;
+        box-shadow: none;
     }
 
     .category:hover {
         transform: none;
     }
 
-    #web_con {
+    .page_wrapper {
+        margin: 0px auto;
+        background-color: white;
+        padding: 0;
+    }
+
+    .page_wrapper_green {
+        margin: 0px auto;
+        padding: 0;
+        background-color: #C7D3D3;
+    }
+
+
+    .page_wrapper_orange {
+        margin: 0px auto;
+        padding: 0;
+        background-color: #C57F5D;
+    }
+
+
+    .row {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        text-decoration: none;
-        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: center;
     }
 
-
-    .web_txt {
-        width: 90%;
-        padding-bottom: 10px;
+    .column_pic {
+        padding: 10px;
     }
 
-    .laptop_icon {
-        width: 50px;
-        height: 50px;
+    .column_txt {
+        height: 100%;
+        padding-bottom: 20px;
+        padding-right: none;
+        margin: 0px auto;
+        border-radius: 0px;
     }
 
-    .desktop {
-        width: 90%;
+    .icon {
+        width: 8%;
+        margin: 30px auto 30px auto;
+        transition: all .3s ease-in-out;
     }
+
+    .icon:hover {
+        transform: none;
+    }
+
 
 }
