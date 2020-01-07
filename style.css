@@ -6,6 +6,12 @@ body {
     overflow-x: hidden;
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
 img {
     width: 100%;
 }
@@ -43,11 +49,10 @@ h3 {
     font-family: 'von_bond_regularregular';
     font-weight: lighter;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
-
-
+    margin: 0;
 }
 
 .h1_underline {
@@ -56,6 +61,15 @@ h3 {
     margin-top: 10px;
     margin-bottom: 25px;
     width: 80%;
+    height: 2px;
+    background-color: rgb(226, 226, 226);
+}
+
+.h3_underline {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 25%;
     height: 2px;
     background-color: rgb(226, 226, 226);
 }
@@ -74,15 +88,6 @@ a {
     font-family: 'von_bond_regularregular';
     src: url('vonbond-regular-webfont.woff2') format('woff2'),
         url('vonbond-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'fragment_coreroman';
-    src: url('fragmentcore-webfont.woff2') format('woff2'),
-        url('fragmentcore-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -186,6 +191,37 @@ nav {
 }
 
 
+/*****LANDINGPAGE******/
+
+.bg h1 {
+    font-family: 'white_angelicaregular';
+    color: rgb(226, 226, 226);
+    text-transform: capitalize;
+}
+
+.bg h2 {
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg {
+    background-image: url(billeder/landingpage.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /****** PORTFOLIO *****/
 
 
@@ -199,7 +235,6 @@ nav {
 
 
 .category_btn {
-
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -210,7 +245,12 @@ nav {
     box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     transition: all .3s ease-in-out;
+    letter-spacing: 3px;
 
+}
+
+.category_btn:hover {
+    letter-spacing: 5px;
 }
 
 .lined_thin {
@@ -232,11 +272,19 @@ nav {
 
     box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-}
 
-.button1 {
     color: white;
     border: 2px solid white;
+
+    transition: all .3s ease-in-out;
+}
+
+
+.button:hover {
+
+    letter-spacing: 2px;
+
+
 }
 
 
@@ -375,6 +423,8 @@ nav {
     flex-basis: 100%;
     flex: 1;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .column_txt {
@@ -394,8 +444,6 @@ nav {
 
 .column_video {
     width: 100%;
-    padding-top: 40px;
-    margin: 10px;
 }
 
 
@@ -417,13 +465,12 @@ nav {
 @media (max-width: 600px) {
     .wrapper {
         display: block;
-        margin: 0px 45px;
-        10px 45px;
+        margin: 0px 45px 10px 45px;
         pointer-events: none;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -467,6 +514,7 @@ nav {
         width: 30%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 1;
     }
 
 
@@ -539,7 +587,7 @@ nav {
     .column_txt {
         height: 100%;
         padding-bottom: 20px;
-        padding-right: none;
+        padding-right: 0;
         margin: 0px auto;
         border-radius: 0px;
     }
@@ -550,8 +598,24 @@ nav {
         transition: all .3s ease-in-out;
     }
 
-    .icon:hover {
-        transform: none;
+    .landingpage {
+        width: 100%;
+        background-size: 100% 100%;
+    }
+
+    .landingpage h1 {
+        font-family: 'white_angelicaregular';
+        font-size: 2rem;
+        color: rgb(226, 226, 226);
+        text-transform: capitalize;
+    }
+
+    .landingpage h2 {
+        font-size: 1rem;
+        letter-spacing: 0.6rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 100;
     }
 
 
