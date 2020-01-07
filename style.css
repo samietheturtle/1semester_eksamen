@@ -250,8 +250,12 @@ nav {
 }
 
 .category_btn:hover {
-    letter-spacing: 5px;
+    background-color: #B59090;
+    border: 0;
+    color: rgb(226, 226, 226);
+
 }
+
 
 .lined_thin {
     border: solid 2px #41403E;
@@ -282,7 +286,9 @@ nav {
 
 .button:hover {
 
-    letter-spacing: 2px;
+    background-color: #B59090;
+    border: 0;
+    color: color: rgb(226, 226, 226);
 
 
 }
@@ -348,7 +354,6 @@ nav {
     background: #FFF;
     color: #151E3F;
     transition: all 0.9s ease;
-
 
 }
 
