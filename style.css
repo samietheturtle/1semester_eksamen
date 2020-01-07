@@ -468,6 +468,10 @@ nav {
 
 /**************RESPONSIVE*****************/
 @media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .wrapper {
         display: block;
         margin: 0px 45px 10px 45px;
